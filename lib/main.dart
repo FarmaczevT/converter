@@ -63,7 +63,12 @@ class _MyHomePageState extends State<MyHomePage> {
       'Кубические сантиметры',
       'Кубические метры'
     ];
-    List<String> timeDropdownItems = ['Секунды', 'Минуты', 'Часы', 'Сутки'];
+    List<String> timeDropdownItems = [
+      'Секунды', 
+      'Минуты', 
+      'Часы', 
+      'Сутки'
+    ];
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 224),
@@ -87,14 +92,10 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
-                  child: _buildButton('Вес-масса', 'assets/images/weight.png',
-                      weightDropdownItems),
+                  child: _buildButton('Вес-масса', 'assets/images/weight.png', weightDropdownItems),
                 ),
                 Expanded(
-                  child: _buildButton(
-                      'Температура',
-                      'assets/images/temperature.png',
-                      temperatureDropdownItems),
+                  child: _buildButton('Температура', 'assets/images/temperature.png', temperatureDropdownItems),
                 ),
               ],
             ),
@@ -102,12 +103,10 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
-                  child: _buildButton(
-                      'Длина', 'assets/images/length.png', lengthDropdownItems),
+                  child: _buildButton('Длина', 'assets/images/length.png', lengthDropdownItems),
                 ),
                 Expanded(
-                  child: _buildButton(
-                      'Площадь', 'assets/images/area.png', areaDropdownItems),
+                  child: _buildButton('Площадь', 'assets/images/area.png', areaDropdownItems),
                 ),
               ],
             ),
@@ -115,12 +114,10 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
-                  child: _buildButton(
-                      'Объем', 'assets/images/obyem.png', volumeDropdownItems),
+                  child: _buildButton('Объем', 'assets/images/obyem.png', volumeDropdownItems),
                 ),
                 Expanded(
-                  child: _buildButton(
-                      'Время', 'assets/images/time.png', timeDropdownItems),
+                  child: _buildButton('Время', 'assets/images/time.png', timeDropdownItems),
                 ),
               ],
             ),
